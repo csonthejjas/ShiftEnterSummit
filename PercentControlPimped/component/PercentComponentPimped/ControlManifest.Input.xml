@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="oases" constructor="PercentComponentPimped" version="0.0.1" display-name-key="PercentComponentPimped" description-key="PercentComponentPimped_description" control-type="standard" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <type-group name="numbers">
+      <type>Whole.None</type>
+      <type>FP</type>
+      <type>Decimal</type>
+   </type-group>
+    <property name="percent" display-name-key="Percentage_Display_Key" description-key="Percentage_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
+    <property name="label" display-name-key="Label_Display_Key" description-key="Label_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="midThreshold" display-name-key="MidThreshold_Display_Key" description-key="MidThreshold_Desc_Key" of-type="Whole.None" usage="input" required="false" default-value="40" />
+    <property name="highThreshold" display-name-key="HighThreshold_Display_Key" description-key="HighThreshold_Desc_Key" of-type="Whole.None" usage="input" required="false" default-value="75" />
+    
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/PercentComponentPimped.css" order="1" />
+      <resx path="strings/PercentComponentPimped.1033.resx" version="1.0.0" />
+    </resources>
+  </control>
+</manifest>
